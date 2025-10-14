@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer 1</title>
+<!-- Buat Program untuk Menghitung BMI dengan menggunakan IIFE & Callback Func (with parameter & return value) -->
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>OUTPUT EXERCISE</h1>
+        <div style="background-color: aqua;">
+            <h2>Output IIFE</h2>
+            <div id="outputIIFE">
+            </div>
+        </div>
+        <div style="background-color: rgb(6, 17, 17);color :white ; margin-top: 10px;">
+            <h2>Output Callback</h2>
+            <div id="outputCallback">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // IIFE
+        let IIFE = (function (tb, bb){
+            const BMI = bb / (tb * tb);
+            return `Berat BMI Anda adalah : ${BMI.toFixed(2)}`
+        })(1.69, 69);
+
+        // Callback
+        function BMI(bmi){
+            let rumus = bmi(68, 1.69)
+            return rumus
+        };
+
+        let Callback = BMI(function (BB, TB) {
+            let bmi = BB / (TB * TB )
+            return `Berat BMI Anda adalah : ${bmi.toFixed(2)}`
+        });
+
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const output = document.getElementById("outputIIFE"); // Pastikan variabel 'output' didefinisikan
+            output.textContent = IIFE;
+            const output1 = document.getElementById("outputCallback"); // Pastikan variabel 'output' didefinisikan
+            output1.textContent = Callback;
+            });
+    </script>
+
+</body>
+</html>

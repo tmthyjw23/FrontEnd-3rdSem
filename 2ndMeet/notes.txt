@@ -1,0 +1,6 @@
+                                    JS History 
+JS adalah scripting language diantara 3 core language yaitu HTML, CSS, dan JavaScript.(Belum masuk ke Programmer)
+
+1991 internet baru bisa di gunakan oleh semua kalangan.
+
+hanya dalam jangka waktu 2 tahun js menjadi sangat populer. 
