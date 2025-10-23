@@ -8,7 +8,7 @@ const App = () => {
           <svg
             viewBox="0 0 1024 1024"
             aria-hidden="true"
-            className="absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            className="motion-safe:animate-bounce absolute top-1/2 left-1/2 -z-10 size-256 -translate-y-1/2 mask-[radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
           >
             <circle r={512} cx={512} cy={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
             <defs>
@@ -18,11 +18,11 @@ const App = () => {
               </radialGradient>
             </defs>
           </svg>
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left animate-pulse">
             <h2 className="text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">
-              Welcome to my page. I learn React.
+              Welcome to my page. I'm learning React.
             </h2>
-            <p className="mt-6 text-lg/8 text-pretty text-gray-300">
+            <p className="mt-6 text-lg/8 text-pretty text-gray-300 ">
               <code>My Name is TIMOTHY</code>
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
@@ -33,7 +33,7 @@ const App = () => {
                 {' '}
                 Get started{' '}
               </a>
-              <a href="#" className="text-sm/6 font-semibold text-white hover:text-gray-100">
+              <a href="#" className="text-sm/6 font-semibold text-white hover:text-gray-100 motion-reduce:safe:animate-bounce">
                 Learn more
                 <span aria-hidden="true">→</span>
               </a>
