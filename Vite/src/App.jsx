@@ -1,5 +1,5 @@
 import React from "react";
-
+import Page from "./Page/index.jsx";
 const App = () => {
   return (
     <div className="bg-gray-900">
@@ -27,7 +27,7 @@ const App = () => {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="#"
+                href=""
                 className="rounded-md bg-gray-700 px-3.5 py-2.5 text-sm font-semibold text-white inset-ring inset-ring-white/5 hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 {' '}
